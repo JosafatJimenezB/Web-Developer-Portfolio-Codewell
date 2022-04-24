@@ -1,1 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Prata&display=swap');
+
+:root{
+    
+    /* ------- Variables para las fuentes ------- */
+    --heading-font: 'Prata', sans-serif;
+    --body-font: 'Inter', sans-serif;
+
+    /* ------- colores ------- */
+    --bg-color: #0a0a0b;
+    --text-color: #fff;
+    --text-color-2: #adadad;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.alter-text{
+    color: var(--text-color-2);
+}
+
+.heading-font{
+    font-family: var(--heading-font);
+}
+
+.body-font{
+    font-family: var(--body-font);
+}
+
+.btn{
+    font-size: 1rem;
+    background: #fbe850;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+/* ------------ Header ------------ */
+header{
+    /* background: lightblue; */
+    padding: 50px 100px;
+    z-index: 10;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo h2{
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-color-2);
+}
+
+nav ul li:nth-child(2){
+    margin: 0 20px;
+}
+
+nav ul li:nth-child(3){
+    margin: 0 20px;
+}
+
+
+

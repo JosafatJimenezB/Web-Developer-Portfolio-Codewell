@@ -229,12 +229,29 @@ nav ul li:nth-child(3){
     padding: 100px 0;
 }
 
-.contract-btn{
+.text-area-contract{
+    max-width: 600px;
+}
+
+.text-area-contract h2{
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.text-area-contract p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    margin: 30px 0;
+}
+
+.text-area-contract button{
     font-size: 1rem;
     background: #fbe850;
     text-decoration: none;
     padding: 15px 30px;
-    position: relative;
+    outline: none;
+    box-shadow: none;
 }
 
 /* ------------ Responsive ------------- */
@@ -276,6 +293,14 @@ nav ul li:nth-child(3){
         width: auto;
         padding: 100px 50px;
     }
+
+    /* ----------- Contract section ----------- */  
+    .contract-section{
+        margin: 0 auto;
+        padding: 100px 50px;
+    }
+
+
 }
 
 
@@ -416,6 +441,16 @@ nav ul li:nth-child(3){
         grid-template-columns: 1fr;
     }
 
+    /* ----------- Contract section ------------ */
+    .contract-section{
+        width: quto;
+        margin: 0 auto;
+        padding: 100px 60px;
+    }
+    
+    .text-area-contract{
+        max-width: 600px;
+    }
 
 }
 
@@ -488,6 +523,15 @@ nav ul li:nth-child(3){
     .about-container{
         padding: 50px 20px;
         grid-template-columns: 1fr;
+    }
+
+    /* ----------- Contract section ------------ */
+    .contract-section{
+        padding: 100px 20px;
+    }
+    
+    .text-area-contract{
+        width: auto;
     }
 }
 

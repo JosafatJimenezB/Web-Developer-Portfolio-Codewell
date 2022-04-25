@@ -550,6 +550,11 @@ footer{
         grid-template-columns: 1fr;
     }
 
+    .text-area-about{
+        height: 400px;
+        margin: 30px 0;
+    }
+
     /* ----------- Contract section ------------ */
     .contract-section{
         padding: 100px 20px;
@@ -557,6 +562,19 @@ footer{
     
     .text-area-contract{
         width: auto;
+    }
+
+    /* ------- footer ------- */
+    .container-footer{
+        padding: 25px 30px;
+    }
+
+    .footer-logo{
+        font-size: 0.8rem;
+    }
+
+    .social-media img{
+        width: 15px;
     }
 }
 

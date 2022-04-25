@@ -182,6 +182,44 @@ nav ul li:nth-child(3){
 }
 
 
+/* ----------- About section ------------- */
+
+.about-section{
+    width: 100%;
+    margin: 0;
+    background: #2e3038;
+}
+
+.about-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.text-area-about{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-area-about h2{
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.text-area-about p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+}
+
+.about-part2 span{
+    font-weight: bold;
+}
 
 
 /* ------------ Responsive ------------- */
@@ -255,7 +293,7 @@ nav ul li:nth-child(3){
     }
 
     nav ul li:hover{
-        background: #fff;
+        background: whitesmoke;
     }
 
     nav ul li:nth-child(2){

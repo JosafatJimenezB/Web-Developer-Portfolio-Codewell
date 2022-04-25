@@ -222,6 +222,21 @@ nav ul li:nth-child(3){
 }
 
 
+/* ---------- Seccion de contrato ------------- */
+.contract-section{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.contract-btn{
+    font-size: 1rem;
+    background: #fbe850;
+    text-decoration: none;
+    padding: 15px 30px;
+    position: relative;
+}
+
 /* ------------ Responsive ------------- */
 @media screen and (max-width: 1280px){
     header{

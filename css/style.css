@@ -241,6 +241,26 @@ nav ul li:nth-child(3){
     .logo{
         width: auto;
     }
+
+    /* --------- Seccion de las paginas ---------- */
+    .container-pages{
+        max-width: 1280px;
+        margin: 0 50px;
+        padding: 70px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    
+    .works{
+        width: auto;
+    }
+
+    /* --------- Seccion del about info ---------- */
+    .about-container{
+        width: auto;
+        padding: 100px 50px;
+    }
 }
 
 

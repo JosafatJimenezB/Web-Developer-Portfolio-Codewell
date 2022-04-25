@@ -373,6 +373,14 @@ nav ul li:nth-child(3){
         width: 100%;
     }
 
+    /* ----------- About section ------------ */
+
+    .about-container{
+        margin: 0 auto;
+        padding: 100px 60px;
+        grid-template-columns: 1fr;
+    }
+
 
 }
 
@@ -438,6 +446,13 @@ nav ul li:nth-child(3){
     
     .works{
         width: 100%;
+    }
+
+    /* ----------- About section ------------ */
+
+    .about-container{
+        padding: 50px 20px;
+        grid-template-columns: 1fr;
     }
 }
 

@@ -254,7 +254,27 @@ nav ul li:nth-child(3){
     box-shadow: none;
 }
 
+
+/* -------------- footer --------------- */
+footer{
+    background: #2e3038;
+    margin: 0 auto;
+}
+
+.container-footer{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    padding: 25px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
 /* ------------ Responsive ------------- */
+
+
 @media screen and (max-width: 1280px){
     header{
         padding: 50px 50px;
@@ -300,6 +320,11 @@ nav ul li:nth-child(3){
         padding: 100px 50px;
     }
 
+
+    /* ------- footer ------- */
+    .container-footer{
+        padding: 25px 60px;
+    }
 
 }
 

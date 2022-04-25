@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 
 html{
@@ -29,6 +30,7 @@ body{
 .container{
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
 }
 
 .text-color{
@@ -52,6 +54,13 @@ body{
     background: #fbe850;
     text-decoration: none;
     padding: 15px 30px;
+}
+
+.close{
+    color: white;
+    display: none;
+    cursor: pointer;
+    font-size: 1.3rem;
 }
 
 /* ------------ Header ------------ */
@@ -83,12 +92,91 @@ nav ul li a{
 }
 
 nav ul li:nth-child(2){
-    margin: 0 20px;
+    margin: 0 10px 0 20px;
 }
 
 nav ul li:nth-child(3){
-    margin: 0 20px;
+    margin: 0 20px 0 10px;
 }
+
+.toggle{
+    /* position: fixed; */
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .toggle{
+        display: block;
+    }
+
+    .close.active{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 70px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .logo h2{
+        left: 0;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 150px;	
+        left: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li{
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 30px 0;
+        transition: background 0.3s;
+    }
+
+    nav ul li:hover{
+        background: #fff;
+    }
+
+    nav ul li:nth-child(2){
+        margin:0;
+    }
+    
+    nav ul li:nth-child(3){
+        margin: 0;
+    }
+
+    .btn{
+        display: none;
+        top: 70px;
+        width: 160px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .btn.active{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .menu.active{
+        display: block;
+    }
+
+}
+
 
 
 

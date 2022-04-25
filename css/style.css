@@ -116,6 +116,10 @@ nav ul li:nth-child(3){
     margin: 0 auto;
 }
 
+.text-area{
+    max-width: 800px;
+}
+
 .text-area h1{
     font-size: 3.5em;
     font-weight: 400;
@@ -131,18 +135,19 @@ nav ul li:nth-child(3){
 
 
 /* ------------ Logo Section ----------- */
-.logos{
+.container-logos{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    grid-auto-columns: auto;
+    grid-gap: 20px;
 }
 
-.logos img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo{
+    width: 213px;
 }
-
 
 
 
@@ -158,6 +163,15 @@ nav ul li:nth-child(3){
         padding: 50px;
     }
     
+    /* ---------- Seccion de los logos ---------- */
+    .container-logos{
+        width: 100%;
+        padding: 30px 50px;
+    }
+    
+    .logo{
+        width: auto;
+    }
 }
 
 
@@ -248,12 +262,62 @@ nav ul li:nth-child(3){
         width: 100%;
         padding: 0 60px;
     }
+
+    /* ----------- Seccion de logos ------------ */
+        
+    .container-logos{
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 500px){
     header{
         padding: 50px 30px;
         z-index: 10;
+    }
+
+    /* ------ Secciond de la landing ------- */
+    .container-landing{
+        padding: 70px 0;
+        margin: 0 auto;
+    }
+
+    .text-area{
+        padding: 0 30px;
+    }
+    
+    .text-area h1{
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+    
+    .text-area p{
+        margin-top: 30px;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+
+    /* ----------- Seccion de logos ------------ */
+        
+    .container-logos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+        margin: auto;
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
